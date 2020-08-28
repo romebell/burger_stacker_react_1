@@ -7,7 +7,7 @@ class IngredientList extends Component {
             return <Ingredient key={idx} name={ingred} color={ingred.color} stackBurger={this.props.stackBurger} />
         });
         return (
-            <div>
+            <div className="ingListDiv">
                 {/* TODO map over ingredients list and display an ingredient component for each ingredients */}
                 {listOfIngredients}
             </div>

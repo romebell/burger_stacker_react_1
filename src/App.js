@@ -34,7 +34,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="appDiv">
       <IngredientList ingredients={ingredients} stackBurger={stackBurger} />
       <BurgerPane stack={stack} clear={clear} />
       {/* List components */}
