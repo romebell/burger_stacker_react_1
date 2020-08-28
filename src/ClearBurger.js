@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
-class IngredientList extends Component {
+class ClearBurger extends Component {
     render() {
         return (
             <div>
-                <Ingredient />
+                <button>Clear</button>
             </div>
         );
     }
 }
-
-export default IngredientList; 

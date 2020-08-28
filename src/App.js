@@ -1,5 +1,7 @@
 import React, { Component, useState } from 'react';
 import './index.css';
+import IngredientList from './IngredientList';
+import BurgerPane from './BurgerPane';
 
 const ingredientSeed = [
   {name: 'Kaiser Bun', color: 'saddlebrown'},
@@ -17,9 +19,24 @@ const ingredientSeed = [
 ];
 
 function App() {
+  // TODO useState
+  const [ingredients, setIngredients] = useState(ingredientSeed);
+  const [stack, setStack] = useState([]);
+
+  // TODO declare some functions
+  function stackBurger(e) {
+    let ingredientToAdd = ingredients.filter(ing => ing.name === e.target.innerText);
+    setStack([ingredientToAdd[0], ...stack]);
+  }
+
+  function clear() {
+    setStack([]);
+  }
+
   return (
     <div>
-      <Burger />
+      <IngredientList />
+      <BurgerPane />
 
     </div>
   );
