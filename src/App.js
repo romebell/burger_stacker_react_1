@@ -35,8 +35,9 @@ function App() {
 
   return (
     <div>
-      <IngredientList />
-      <BurgerPane />
+      <IngredientList ingredients={ingredients} stackBurger={stackBurger} />
+      <BurgerPane stack={stack} clear={clear} />
+      {/* List components */}
 
     </div>
   );
