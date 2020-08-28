@@ -4,7 +4,7 @@ class Ingredient extends Component {
     render() {
         return (
             <div>
-                <div className=""></div>
+                <div className="ing" onClick={(e) => this.props.stackBurger(e)}>{this.props.name}</div>
             </div>
         );
     }
